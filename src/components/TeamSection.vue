@@ -2,8 +2,8 @@
 
 const team = [
   {
-    name: 'Dr. Margaret Osei',
-    role: 'Medical Director',
+    name: 'Leah Marie D. Villarta',
+    role: 'CEO/FOUNDER',
     description:
       'Experienced healthcare professional dedicated to patient-centered care.',
     image:
@@ -11,8 +11,8 @@ const team = [
   },
 
   {
-    name: 'James Whitfield',
-    role: 'Lead Physical Therapist',
+    name: 'Marlon R. Segundo',
+    role: 'CEO/FOUNDER',
     description:
       'Specialist in rehabilitation and mobility-focused therapy.',
     image:
@@ -20,8 +20,8 @@ const team = [
   },
 
   {
-    name: 'Clara Santos',
-    role: 'Director of Nursing',
+    name: 'Dr. Josefa ',
+    role: 'Residence Doctor',
     description:
       'Committed to creating safe and dignified environments for patients.',
     image:
@@ -29,8 +29,8 @@ const team = [
   },
 
   {
-    name: 'David Yuen',
-    role: 'Care Coordinator',
+    name: 'Joy Torralba',
+    role: 'Clinical Manager',
     description:
       'Helps families and healthcare teams coordinate seamless care.',
     image:
@@ -38,8 +38,8 @@ const team = [
   },
 
   {
-    name: 'Sophia Reyes',
-    role: 'Senior Caregiver',
+    name: 'Donna Galing',
+    role: 'Caregiver Supervisor',
     description:
       'Provides compassionate daily care and meaningful support to every patient.',
     image:
