@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+:root {
+  --primary-blue: #1a3575;
+  --light-blue: #4bc8ec;
+  --pale-blue: #daeaf7;
+  --dark-text: #172033;
+  --gray-text: #677184;
+  --border-color: #e2e7ee;
+  --light-background: #f5f7fa;
+  --footer-background: #121a2a;
+  --white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,32 +20,18 @@ html {
 
 body {
   margin: 0;
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
-  background: white;
-  color: #123b46;
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #ffffff;
 }
 
 button,
 input,
-textarea,
-select {
-  font-family: inherit;
+select,
+textarea {
+  font: inherit;
 }
 
 img {
   max-width: 100%;
-  display: block;
-}
-
-a {
-  transition: 0.2s ease;
-}
-
-:root {
-  --primary-blue: #173779;
 }
