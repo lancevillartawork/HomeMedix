@@ -6,6 +6,7 @@ interface Service {
   description: string
   features: string[]
   image: string
+  route: string
 }
 
 const selectedService = ref(0)
@@ -25,7 +26,9 @@ const services: Service[] = [
     ],
 
     image:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80',
+
+    route: '/services/home-caregiving'
   },
 
   {
@@ -42,7 +45,9 @@ const services: Service[] = [
     ],
 
     image:
-      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80',
+
+    route: '/services/physical-therapy'
   },
 
   {
@@ -59,14 +64,12 @@ const services: Service[] = [
     ],
 
     image:
-      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80'
+      'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80',
+
+    route: '/services/nursing-home'
   }
 ]
 
-/*
-  The ! tells TypeScript that we know
-  the selected service will exist.
-*/
 const selectedServiceData = computed<Service>(() => {
   return services[selectedService.value]!
 })
@@ -78,7 +81,6 @@ const selectedServiceData = computed<Service>(() => {
     <div class="container">
 
       <!-- SECTION TITLE -->
-
       <div class="section-heading">
 
         <p class="eyebrow">
@@ -99,9 +101,7 @@ const selectedServiceData = computed<Service>(() => {
 
       </div>
 
-
       <!-- SERVICE BUTTONS -->
-
       <div class="service-tabs">
 
         <button
@@ -116,13 +116,10 @@ const selectedServiceData = computed<Service>(() => {
 
       </div>
 
-
       <!-- SERVICE CARD -->
-
       <div class="service-card">
 
         <!-- LEFT -->
-
         <div class="service-content">
 
           <span class="service-number">
@@ -137,9 +134,7 @@ const selectedServiceData = computed<Service>(() => {
             {{ selectedServiceData.description }}
           </p>
 
-
           <!-- FEATURES -->
-
           <ul>
 
             <li
@@ -157,16 +152,14 @@ const selectedServiceData = computed<Service>(() => {
 
           </ul>
 
-
-          <a href="#contact">
+          <!-- LEARN MORE -->
+          <RouterLink :to="selectedServiceData.route">
             Learn More →
-          </a>
+          </RouterLink>
 
         </div>
 
-
         <!-- RIGHT -->
-
         <div class="service-image">
 
           <img
@@ -182,7 +175,6 @@ const selectedServiceData = computed<Service>(() => {
 
   </section>
 </template>
-
 
 <style scoped>
 
@@ -271,7 +263,7 @@ h2 {
 
   color: white;
 
-  border-color: #123b46;
+  border-color: #1a3575;
 }
 
 
@@ -371,15 +363,19 @@ h3 {
 ========================= */
 
 .service-content a {
+  display: inline-block;
+
   color: #1a3575;
 
   font-weight: bold;
 
   text-decoration: none;
+
+  transition: 0.2s ease;
 }
 
 .service-content a:hover {
-  text-decoration: underline;
+  transform: translateX(4px);
 }
 
 
