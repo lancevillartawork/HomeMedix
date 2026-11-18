@@ -3,7 +3,7 @@
 const team = [
   {
     name: 'Leah Marie D. Villarta, PTRP',
-    role: 'CEO/FOUNDER',
+    role: 'CEO',
     description:
       'Leads HomeMedix with a vision focused on compassionate, reliable, and patient-centered healthcare services.',
     image:
@@ -12,7 +12,7 @@ const team = [
 
   {
     name: 'Marlon R. Segundo',
-    role: 'CEO/FOUNDER',
+    role: 'COO',
     description:
       'Helps lead the organization in delivering quality healthcare while supporting the growth and development of HomeMedix.',
     image:
@@ -20,26 +20,26 @@ const team = [
   },
 
   {
-    name: 'Dr. Oro-Josef Cheridine, MD',
-    role: 'RESIDENT DOCTOR',
+    name: 'Elmira Contreras',
+    role: 'HR MANAGER',
     description:
-      'Provides medical supervision and professional care to residents while helping ensure their health, safety, and well-being.',
+    'Oversees human resource operations, including employee recruitment, staffing, personnel management, and employee relations to ensure effective workforce administration.',
     image:
       'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&w=600&q=80'
   },
 
   {
     name: 'Joy Toralba',
-    role: 'CLINICAL MANAGER',
+    role: 'DEPLOYMENT MANAGER',
     description:
-      'Oversees clinical operations and coordinates healthcare services to ensure consistent, safe, and quality patient care.',
+    'Oversees caregiver deployment, staff scheduling, and workforce assignments to ensure adequate staffing and efficient delivery of healthcare services across branches.',
     image:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'
   },
 
   {
     name: 'Donna Galing',
-    role: 'CAREGIVER SUPERVISOR',
+    role: 'OPERATIONS MANAGER',
     description:
       'Supervises caregivers and supports the delivery of compassionate, dependable, and personalized daily care for patients.',
     image:
